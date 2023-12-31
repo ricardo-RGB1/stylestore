@@ -4,20 +4,25 @@ import { Product } from "@/types";
 
 const URL = `${process.env.NEXT_PUBLIC_API_URL}/products`;
 
-interface Query {
+interface Query { 
   categoryId?: string;
   colorId?: string;
   sizeId?: string;
   isFeatured?: boolean; 
-}
+} 
 
 /**
  * Retrieves products based on the provided query parameters.
  * @param query - The query parameters for filtering the products.
  * @returns A promise that resolves to an array of products.
  */
-const getProducts = async (query: Query): Promise<Product[]> => {
+const getProducts = async (query: Query): Promise<Product[]> => { // query is an object that contains the query parameters
 
+  /**
+   * Constructs the URL with query parameters for retrieving products.
+   * @param query - The query object containing colorId, sizeId, categoryId, and isFeatured.
+   * @returns The constructed URL with query parameters.
+   */
   const url = qs.stringifyUrl({ 
     url: URL,
     query: {
