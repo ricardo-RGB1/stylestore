@@ -40,7 +40,7 @@ const Info: React.FC<InfoProps> = ({ product }) => {
                 <ShoppingCart />
             </Button>
         </div>
-    </div>
+    </div> 
   );
 };
 
