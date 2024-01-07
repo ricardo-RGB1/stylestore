@@ -13,7 +13,7 @@ const Billboard: React.FC<BillboardProps> = ({ data }) => {
       >
         <div className="h-full w-full flex flex-col justify-center items-center text-center gap-y-8">
           {/* add class names for different media queries */}
-          <div className="font-bold text-3xl sm:text-5xl lg:text-6xl sm:max-w-xl max-w-xs backdrop-blur-lg p-2 text-slate-200 md:text-black">
+          <div className="font-bold text-3xl sm:text-5xl lg:text-6xl sm:max-w-xl max-w-xs backdrop-blur-xl bg-slate-800 p-2 text-slate-200">
             {data?.label}
           </div>
         </div>
