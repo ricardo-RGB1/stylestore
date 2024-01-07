@@ -37,6 +37,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           `,
           className // This is the className prop passed to the component
         )}
+        disabled={disabled}
         ref={ref} // Attach the ref to the button element
         {...props} // Spread the rest of the props onto the button element
       >
