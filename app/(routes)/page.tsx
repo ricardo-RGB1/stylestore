@@ -4,11 +4,13 @@ import getBillboard from "@/actions/get-billboard";
 import getProducts from "@/actions/get-products";
 import ProductList from "@/components/product-list";
 
+
 export const revalidate = 0; // Revalidate at every request
 
 const HomePage = async () => {
   const products = await getProducts({ isFeatured: true }); // get all featured products
   const billboard = await getBillboard("c1dc737e-d459-47ef-b990-9deb17dadc0f");
+
 
   return (
     <Container>

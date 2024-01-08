@@ -46,7 +46,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
       onClick={handleClick}
       className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4"
     >
-      {/* Images and actions */}
+      {/* Images and actions: Display the first image of the product */}
       <div className="aspect-square rounded-xl bg-gray-600 relative">
         <Image
           src={data?.images?.[0]?.url}

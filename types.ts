@@ -1,3 +1,8 @@
+export interface Store {
+    id: string;
+    name: string;
+}
+
 export interface Billboard {
     id: string; 
     label: string;
@@ -37,4 +42,5 @@ export interface Color {
     name: string;
     value: string;
 }
+
 
